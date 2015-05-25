@@ -23,11 +23,24 @@ These include simulators with high dimensional inputs or outputs or which are ve
 
 ##Simulator code available
 
+* **Boarding school flu models**.
+The R package [pomp](http://cran.at.r-project.org/web/packages/pomp/) contains several simulators for SIR epidemic models (see for example [Britton](http://www.sciencedirect.com/science/article/pii/S0025556410000143)) and data from an influenza outbreak in a British boarding school (described [here](http://math.unm.edu/~sulsky/mathcamp/Anon_InfluenzaBoardingSchool_BMJ_1978.pdf).)
+Use `simulate` on `euler.sim`, `gillespie.sir` and `bbs`.
+
+* **Dacca cholera model**.
+An SDE SIRS cholera model and data from Dacca district over the years 1891 to 1940.
+This is analysed in [King et al](http://www.nature.com/nature/journal/v454/n7206/full/nature07084.html).
+A simulator is given in the R package [pomp](http://cran.at.r-project.org/web/packages/pomp/): use `simulate` on the `dacca` example.
+
 * **g-and-k distribution**.
 This is a flexible 4-parameter distribution with an intractable pdf.
 It has often been used as a test in the ABC literature, starting with [Allingham et al](http://link.springer.com/article/10.1007/s11222-008-9083-x).
 My unfinished R package [gk](https://github.com/dennisprangle/gk) simulates from this distribution.
 Simulation requires only 1 line of code so it is very easy to reimplement in other languages.
+
+* **Gompertz population model**.
+A stochastic Gompertz population model with log-normal measurement error.
+A simulator is given in the R package [pomp](http://cran.at.r-project.org/web/packages/pomp/): use `simulate` on the `gompertz` example.
 
 * **Moving average models**.
 [Marin et al](http://www.sciencedirect.com/science/article/pii/S0167947311004245) use inference for an MA(1) model as an example of ABC parameter inference where the exact posterior is avaiable.
@@ -35,9 +48,18 @@ Simulation requires only 1 line of code so it is very easy to reimplement in oth
 Again exact posterior values are available.
 The models can be simulated from using the `arima.sim` command in R and are simple to reimplement.
 
+* **OU2 model**.
+A bivariate discrete-time Ornstein-Uhlenbeck process.
+A simulator is given in the R package [pomp](http://cran.at.r-project.org/web/packages/pomp/): use `simulate` on the `ou2` example.
+
 * **Ricker and blowfly models**.
 These are ecological models of population size data used in [Wood](http://www.nature.com/nature/journal/v466/n7310/full/nature09319.html).
-Simulator code is available in the R package [synlik](http://cran.r-project.org/web/packages/synlik/index.html).
+Simulator code is available in the R package [synlik](http://cran.r-project.org/web/packages/synlik/index.html) under `rickerSimul` and `blowSimul`.
+Alternative simulators (and a blowflies variant) are in the R package [pomp](http://cran.at.r-project.org/web/packages/pomp/): use `simulate` on the `ricker` and `blowflies` examples.
+
+* **RW2 model**.
+A 2-D normal random walk model.
+A simulator is given in the R package [pomp](http://cran.at.r-project.org/web/packages/pomp/): use `simulate` on the `rw2` example.
 
 * **Spatial extremes.**
 Max-stable processes can be used to model spatial extreme data.
