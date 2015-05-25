@@ -71,7 +71,7 @@ This includes code to calculate the summary statistics they used.
 This family of distributions has similar properties to the normal distribution but heavier tails.
 Most have an intractable pdf.
 The R [stabledist](http://cran.r-project.org/web/packages/stabledist/index.html) package simulates from this distribution.
-For more background see [wikipedia]((http://en.wikipedia.org/wiki/Stable_distribution).
+For more background see [wikipedia](http://en.wikipedia.org/wiki/Stable_distribution).
 It has been used in ABC analysis of financial data by [Peters et al](http://projecteuclid.org/euclid.ba/1339616543) and [Jasra et al](http://link.springer.com/article/10.1007/s11222-010-9185-0) amongst others.
 Some effort might be needed to reimplement their full models.
 
