@@ -72,8 +72,8 @@ This family of distributions has similar properties to the normal distribution b
 Most have an intractable pdf.
 The R [stabledist](http://cran.r-project.org/web/packages/stabledist/index.html) package simulates from this distribution.
 For more background see [wikipedia](http://en.wikipedia.org/wiki/Stable_distribution).
-It has been used in ABC analysis of financial data by [Peters et al](http://projecteuclid.org/euclid.ba/1339616543) and [Jasra et al](http://link.springer.com/article/10.1007/s11222-010-9185-0) amongst others.
-Some effort might be needed to reimplement their full models.
+It has been used in ABC analysis of financial data by [Peters et al](http://www.sciencedirect.com/science/article/pii/S0167947310003786) and [Jasra et al](http://link.springer.com/article/10.1007/s11222-010-9185-0) amongst others.
+These include complex models involving using stable distributions for noise which could take some to reimplement.
 
 * **Trait dynamics**.
 This is a model of ecological dynamics of traits in species from [Jabot](http://www.sciencedirect.com/science/article/pii/S002251930900530X).
