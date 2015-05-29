@@ -24,7 +24,7 @@ These include simulators with high dimensional inputs or outputs or which are ve
 ##Simulator code available
 
 * **Boarding school flu models**.
-The R package [pomp](http://cran.at.r-project.org/web/packages/pomp/) contains several simulators for SIR epidemic models (see for example [Britton](http://www.sciencedirect.com/science/article/pii/S0025556410000143)) and data from an influenza outbreak in a British boarding school (described [here](http://math.unm.edu/~sulsky/mathcamp/Anon_InfluenzaBoardingSchool_BMJ_1978.pdf).)
+The R package [pomp](http://cran.at.r-project.org/web/packages/pomp/) contains several simulators for SIR epidemic models (see for example [Britton](http://www.sciencedirect.com/science/article/pii/S0025556410000143)) and data from an influenza outbreak in a British boarding school (described [here](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1603269/?page=2).)
 Use `simulate` on `euler.sim`, `gillespie.sir` and `bbs`.
 
 * **Dacca cholera model**.
