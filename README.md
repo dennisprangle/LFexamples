@@ -37,6 +37,8 @@ This is a flexible 4-parameter distribution with an intractable pdf.
 It has often been used as a test in the ABC literature, starting with [Allingham et al](http://link.springer.com/article/10.1007/s11222-008-9083-x).
 My unfinished R package [gk](https://github.com/dennisprangle/gk) simulates from this distribution.
 Simulation requires only 1 line of code so it is very easy to reimplement in other languages.
+(ABC has also been used on Tukey's **g-and-h distribution**, which is somewhat similar, by [Peters and Sisson](http://www.risk.net/journal-of-operational-risk/technical-paper/2160915/bayesian-inference-monte-carlo-sampling-operational-risk).
+A book length treatment of many other intractable distributions defined by quantiles is by [Gilchrist](http://www.amazon.com/Statistical-Modelling-Quantile-Functions-Gilchrist/dp/1584881747).)
 
 * **Gompertz population model**.
 A stochastic Gompertz population model with log-normal measurement error.
