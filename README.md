@@ -81,6 +81,9 @@ These include complex models involving using stable distributions for noise whic
 This is a model of ecological dynamics of traits in species from [Jabot](http://www.sciencedirect.com/science/article/pii/S002251930900530X).
 A simulator is included in the [EasyABC](http://cran.r-project.org/web/packages/EasyABC/index.html) R package.
 
+* **Weak lensing**.
+The cosmology model simulator in [Lin and Kilbinger](http://arxiv.org/abs/1506.01076) uses the publicly available [CAMELUS algorithm](https://github.com/Linc-tw/camelus).
+
 ##Simulator output available
 
 * **coal dataset**.
