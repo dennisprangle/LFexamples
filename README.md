@@ -94,10 +94,12 @@ This genetic data on humans under 3 demographic models is available in the [abc.
 150,000 simulations, 3 summary statistics, 4 parameters, 3 models, and observed data from 3 populations.
 
 * **musigma2 dataset**.
-This is made up of has population mean and variance under a normal model and is available in the [abc.data](http://cran.r-project.org/web/packages/abc.data/index.html) R package.
-150,000 simulations, 2 summary statistics, 2 parameters.
+This is made up of simulations from a normal model with unknown mean and variance.
+The summary statistics are the mean and log variance of 50 iid samples.
+The data is available in the [abc.data](http://cran.r-project.org/web/packages/abc.data/index.html) R package.
 The observations are taken from the classic [iris](http://en.wikipedia.org/wiki/Iris_flower_data_set) dataset.
 Details from the true posterior are also provided.
+150,000 simulations, 2 summary statistics, 2 parameters.
 
 ##Other examples
 
