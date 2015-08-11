@@ -110,3 +110,8 @@ Details from the true posterior are also provided.
 A queue with Markov arrival and non-Markov service times in which only departure times are observed has an intractable likelihood but is very simple to write a simulator for.
 ABC analyses have been performed by [Blum and Francois](http://link.springer.com/article/10.1007/s11222-009-9116-0) and [Fearnhead and Prangle](http://onlinelibrary.wiley.com/doi/10.1111/j.1467-9868.2011.01010.x/full) amongst others.
 Recently an exact MCMC approach has been proposed by [Shestopaloff and Neal](http://arxiv.org/abs/1401.5548) which could be used for comparison.
+
+* **Quantum system identification in the atom master**.
+[Catana et al](http://iopscience.iop.org/1751-8121/47/41/415302) discuss a quantum experimental system which can be represented by a birth-death process (their algorithm 1).
+If full observations are available a likelihood can be calculated, although this is expensive.
+Their paper concentrates on finding partial observations which can, when analysed by ABC, give comparable inferential results.
