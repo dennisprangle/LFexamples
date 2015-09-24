@@ -84,6 +84,12 @@ A simulator is included in the [EasyABC](http://cran.r-project.org/web/packages/
 * **Weak lensing**.
 The cosmology model simulator in [Lin and Kilbinger](http://arxiv.org/abs/1506.01076) uses the publicly available [CAMELUS algorithm](https://github.com/Linc-tw/camelus).
 
+* **Sunyaev-Zeldovic cluster formation**.
+
+This cosmological process can be simulated using the [numcosmo](http://www.nongnu.org/numcosmo/) python library.
+For details see [Ishida et al](http://www.sciencedirect.com/science/article/pii/S2213133715000748) who analyse this as an example of their [cosmoabc](https://pypi.python.org/pypi/cosmoabc) python package.
+This includes an input file for numcosmo simulations of the type used in the paper.
+
 ##Simulator output available
 
 * **coal dataset**.
