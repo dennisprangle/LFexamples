@@ -89,6 +89,10 @@ This cosmological process can be simulated using the [numcosmo](http://www.nongn
 For details see [Ishida et al](http://www.sciencedirect.com/science/article/pii/S2213133715000748) who analyse this application as an example of their [cosmoabc](https://pypi.python.org/pypi/cosmoabc) python package.
 The package includes an input file for numcosmo simulations of the type used in the paper.
 
+* **Voles prey-predator model**.
+This a prey-predator state space model, used by [Fasiolo and Wood](http://arxiv.org/abs/1511.02644) to describe population abundance dynamics of Fennoscandian voles.
+Simulator code is available in the R package [volesModel](https://github.com/mfasiolo/volesModel) under `volesSimulator`. Also, real data is available using `data(voles_data)`.
+
 ##Simulator output available
 
 * **coal dataset**.
