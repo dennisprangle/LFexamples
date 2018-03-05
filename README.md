@@ -21,7 +21,7 @@ Please add or get in touch about any further examples you are familiar with.
 Challenging applications are particularly welcome to help motivate new methods.
 These include simulators with high dimensional inputs or outputs or which are very computationslly intensive to run.
 
-##Simulator code available
+## Simulator code available
 
 * **Boarding school flu models**.
 The R package [pomp](http://cran.at.r-project.org/web/packages/pomp/) contains several simulators for SIR epidemic models (see for example [Britton](http://www.sciencedirect.com/science/article/pii/S0025556410000143)) and data from an influenza outbreak in a British boarding school (described [here](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1603269/?page=2).)
@@ -93,7 +93,13 @@ The package includes an input file for numcosmo simulations of the type used in 
 This a prey-predator state space model, used by [Fasiolo and Wood](http://arxiv.org/abs/1511.02644) to describe population abundance dynamics of Fennoscandian voles.
 Simulator code is available in the R package [volesModel](https://github.com/mfasiolo/volesModel) under `volesSimulator`. Also, real data is available using `data(voles_data)`.
 
-##Simulator output available
+* **Ising/Potts model**.
+This is a Markov random field that can be used to classify pixels in image analysis. The inverse temperature parameter $\beta$ has a sufficient statistic, but the normalising constant is intractable. ABC for the Potts model was introduced by [Grelaud et al](https://doi.org/10.1214/09-BA412). ABC-SMC and ABC-MCMC algorithms are implemented in the R package [bayesImageS]( https://CRAN.R-project.org/package=bayesImageS). Perfect sampling for the Ising model is possible for $\beta$ below the critical temperature using coupling from the past (CFTP; [Propp and Wilson](https://doi.org/10.1002/(SICI)1098-2418(199608/09)9:1/2<223::AID-RSA14>3.0.CO;2-O)). Bounding chains for Swendsen-Wang can be used to simulate from the cold states ($\beta > \beta_{crit}$), as shown by [Huber](https://doi.org/10.1002/rsa.10071). The R package [PottsUtils]( https://CRAN.R-project.org/package=PottsUtils) provides other algorithms for simulating from Ising/Potts models. Real data is available using `data(Menteith)` in the R package [bayess](https://CRAN.R-project.org/package=bayess).
+
+* **Exponential random graph model** (ERGM).
+A Markov model for social networks, based on structural motifs such as triangles and *k-stars*. Like the Ising/Potts, this model has sufficient statistics but an intractable normalising constant. ABC-SMC for ERGM was introduced by [Everitt](https://doi.org/10.1080/10618600.2012.687493). His MATLAB code is available in the online supplementary material. The R package [ergm]( https://CRAN.R-project.org/package=ergm) implements the tie-no-tie (TNT) sampler for simulating from the model. For more details, see [Morris Handcock & Hunter](https://doi.org/10.18637/jss.v024.i04) and [Hunter et al](10.18637/jss.v024.i03). Real data is available from the [Stanford large network dataset collection](https://snap.stanford.edu/data/) (SNAP).
+
+## Simulator output available
 
 * **coal dataset**.
 This data is generated from a coalescent model and is available in the [abctools](http://cran.r-project.org/web/packages/abctools/index.html) R packages.
@@ -113,7 +119,7 @@ together with observations taken from the classic [iris](http://en.wikipedia.org
 Details from the true posterior are also provided.
 150,000 simulations, 2 summary statistics, 2 parameters.
 
-##Other examples
+## Other examples
 
 * **M/G/1 queues**.
 A queue with Markov arrival and non-Markov service times in which only departure times are observed has an intractable likelihood but is very simple to write a simulator for.
